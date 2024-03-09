@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricketer Friends Surprise Wish</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(195, 234, 234);
+        }
+
+        #surprise-container {
+            display: none;
+            margin-top: 10px;
+            padding: 100px;
+            background-color:rgb(241, 241, 187);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #surprise-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #cricket-ball {
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #friend-photos {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .friend-photo {
+            width: 370px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="surprise-container">
+    <h1>🏏 All THE VERY BEST GUYS 🎉</h1>
+    <p>Hey Cricket Champions!</p>
+    <p>Wishing you endless boundaries, wickets, and victories on and off the field.</p>
+    <p>May your cricket matches be filled with joy, success, and memorable moments!</p>
+    <p>Keep hitting them out of the park!</p>
+    <div id="friend-photos">
+        <!-- Placeholder images, replace these URLs with your friends' actual photo URLs -->
+        <img class="friend-photo" src="grpphoto.jpeg" alt="Friend 1">
+        <!-- <img class="friend-photo" src="https://via.placeholder.com/100" alt="Friend 2">
+        <img class="friend-photo" src="https://via.placeholder.com/100" alt="Friend 3"> -->
+    </div>
+    <br>
+    <p>Keep Rocking 🤘</p>
+    <!-- <p>Success is a journey not a destination</p> -->
+    <!-- <p>Teju</p> -->
+</div>
+
+<button id="surprise-button">Surprise</button>
+
+<script>
+    document.getElementById('surprise-button').addEventListener('click', function() {
+        document.getElementById('surprise-container').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
